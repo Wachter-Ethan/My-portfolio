@@ -58,6 +58,7 @@ header {
     background-color: rgba(0, 0, 0, 0.1);
     margin-left: 10%;
     margin-right: 50%;
+    margin-bottom: 30px;
     text-align: center;
     align-items: center;
     justify-content: center;
@@ -77,4 +78,39 @@ header {
     padding-top: 20px;
     padding-bottom: 15px;
     border-radius: 15px;
+}
+
+.img_projets {
+    display: flex;
+    height: 500px;
+    width: 100%;
+    overflow: clip;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+/* pour les img
+
+.img_projets img {
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: all .8s ease-in-out;
+}
+*/
+
+.img_projets div {
+    background-color: blue;
+    width: 100px;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+    margin: 0 5px;
+    transition: all .8s ease-in-out;
+}
+
+.img_projets div:hover {
+    flex-grow: 0.9;
 }
