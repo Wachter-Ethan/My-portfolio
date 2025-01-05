@@ -2,6 +2,11 @@
     margin: 0px;
     padding: 0px;
     scroll-behavior: smooth;
+    overflow-x: hidden;
+}
+
+body {
+    background-color: white;
 }
 
 header {
@@ -23,20 +28,54 @@ header {
     font-size: 1.5em;
 }
 
-.part_présentation {
-    background-color: rgba(0, 0, 0, 0.1);
+.part_presentation {
+    background-color: white;
     margin-top: 100px;
     margin-left: 5%;
-    margin-right: 20%;
+    margin-right: 5%;
     margin-bottom: 60px;
     min-height: 210px;
     align-items: center;
     justify-content: center;
     border-radius: 10px;
+    position: relative;
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
+@property --angle{
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+.part_presentation::after, .part_presentation::before {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), transparent 80%, blue);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    border-radius: 10px;
+    padding: 2px;
+    animation: 3s spin linear infinite;
+}
+.part_presentation::before{
+    filter: blur(1.5rem);
+    opacity: 0.7;
+}
+@keyframes spin {
+    from{
+        --angle: 0deg;
+    }
+    to{
+        --angle: 360deg;
+    }
+}
+
 .photo {
+    margin-left: 10px;
     margin-top: 5px;
     margin-right: 15px;
     height: 200px;
@@ -52,6 +91,20 @@ header {
     width: auto;
     line-height: 1.5;
     font-size: 1.1em;
+}
+
+@media screen and (max-width: 300px) {
+    .photo {
+        float: none;
+        margin-bottom: 20px;
+        height: 100px;
+        width: 100px;
+    }
+    .part_presentation{
+        padding-left: 15px;
+        padding-right: 5px;
+        padding-top: 5px;
+    }
 }
 
 .titre {
@@ -78,6 +131,8 @@ header {
     padding-top: 20px;
     padding-bottom: 15px;
     border-radius: 15px;
+    align-items: center;
+    justify-content: center;
 }
 
 .img_projets {
@@ -88,6 +143,12 @@ header {
     overflow: clip;
     margin-left: 20px;
     margin-right: 20px;
+}
+
+@media screen and (max-width: 300px) {
+    .img_projets {
+        height: 300px;
+    }
 }
 
 /* pour les img
