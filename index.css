@@ -74,15 +74,16 @@ header {
     margin-top: 130px;
     margin-bottom: 10px;
     margin-left: 5%;
-    margin-right: 10%;
+    margin-right: 5%;
     padding-top: 20px;
     padding-bottom: 15px;
     border-radius: 15px;
 }
 
 .img_projets {
-    display: flex;
-    height: 500px;
+    justify-content: space-evenly;
+    display: inline-flex;
+    height: 400px;
     width: 100%;
     overflow: clip;
     margin-left: 20px;
@@ -99,11 +100,13 @@ header {
     margin: 0 5px;
     transition: all .8s ease-in-out;
 }
+
++ penser a modifier les autre balise div
 */
 
 .img_projets div {
     background-color: blue;
-    width: 100px;
+    width: 20%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -112,5 +115,5 @@ header {
 }
 
 .img_projets div:hover {
-    flex-grow: 0.9;
+    flex-grow: 0.5;
 }
