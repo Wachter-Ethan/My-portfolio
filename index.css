@@ -42,38 +42,6 @@ header {
     box-shadow: 5px 5px 20px rgba(0, 0, 0, 0.4);
 }
 
-@property --angle{
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
-}
-.part_presentation::after, .part_presentation::before {
-    content: "";
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle), transparent 80%, blue);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    border-radius: 10px;
-    padding: 2px;
-    animation: 3s spin linear infinite;
-}
-.part_presentation::before{
-    filter: blur(1.5rem);
-    opacity: 0.7;
-}
-@keyframes spin {
-    from{
-        --angle: 0deg;
-    }
-    to{
-        --angle: 360deg;
-    }
-}
-
 .photo {
     margin-left: 10px;
     margin-top: 5px;
@@ -83,12 +51,21 @@ header {
     background-color: blue;
     border-radius: 50%;
     float: left;
-    shape-outside: circle(50%);
-    shape-margin: 10px;
+}
+
+@media screen and (max-width: 700px) {
+    .photo {
+        float: none;
+        margin-left: 50px;
+        margin-top: 15px;
+    }
+    .txt_presentation {
+        margin-right: 15px;
+    }
 }
 
 .txt_presentation {
-    width: auto;
+    margin-top: 30px;
     line-height: 1.5;
     font-size: 1.1em;
 }
@@ -141,7 +118,6 @@ header {
     height: 400px;
     width: 100%;
     overflow: clip;
-    margin-left: 20px;
     margin-right: 20px;
 }
 
@@ -167,7 +143,7 @@ header {
 
 .img_projets div {
     background-color: blue;
-    width: 20%;
+    width: 15%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
