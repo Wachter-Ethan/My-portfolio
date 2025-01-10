@@ -127,10 +127,10 @@ header {
     }
 }
 
-/* pour les img
+/* pour les img */
 
 .img_projets img {
-    width: 100px;
+    width: 15%;
     height: 100%;
     object-fit: cover;
     border-radius: 10px;
@@ -138,8 +138,6 @@ header {
     transition: all .8s ease-in-out;
 }
 
-+ penser a modifier les autre balise div
-*/
 
 .img_projets div {
     background-color: blue;
@@ -152,5 +150,9 @@ header {
 }
 
 .img_projets div:hover {
+    flex-grow: 0.5;
+}
+
+.img_projets img:hover {
     flex-grow: 0.5;
 }
