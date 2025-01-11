@@ -156,3 +156,9 @@ header {
 .img_projets img:hover {
     flex-grow: 0.5;
 }
+
+/* partie CV */
+
+.hidden {
+    display: none;
+}
