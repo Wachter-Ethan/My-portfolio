@@ -162,3 +162,130 @@ header {
 .hidden {
     display: none;
 }
+
+/* bouton CV */
+
+main {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    margin-left: 5%;
+    margin-right: 10%;
+    height: auto;
+    padding-left: 20px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 15px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+}
+
+.btn_CV {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 2%;
+    background-color: none;
+    border: 1px solid black;
+    border-radius: 10px;
+    padding: 5px;
+    padding-left: 20px;
+    padding-right: 20px;
+    cursor: pointer;
+    box-shadow: 
+        0 0 0px rgba(0, 0, 255, 0.7),
+        0 0 0px rgba(0, 0, 255, 0.5),
+        0 0 0px rgba(0, 0, 255, 0.3),
+        0 0 0px rgba(0, 0, 255, 0.1);
+}
+.btn_CV:hover {
+    transition: all ease-in-out 0.5s;
+    background-color: black;
+    color: white;
+    border: 1px solid blue;
+    box-shadow: 
+        0 0 5px rgba(0, 0, 255, 0.7),
+        0 0 10px rgba(0, 0, 255, 0.5),
+        0 0 15px rgba(0, 0, 255, 0.3),
+        0 0 20px rgba(0, 0, 255, 0.1);
+}
+
+/* mon CV */
+
+.CV {
+    margin-top: 10px;
+}
+
+.cadre_cv {
+    border: 2px solid black;
+    height: auto;
+    width: 90%;
+    margin-left: 2%;
+    margin-bottom: 20px;
+    display: grid; 
+    grid-template-columns: 1fr 2fr; 
+    grid-template-rows: auto auto auto; 
+    gap: 15px 15px; 
+    grid-template-areas: 
+        "box_1 box_2"
+        "box_1 box_3"
+        "box_1 box_3"; 
+}
+
+.box_1 {
+    grid-area: box_1;
+    background-color: blue;
+    box-shadow: 
+        0 0 5px rgba(0, 0, 255, 0.8),
+        0 0 10px rgba(0, 0, 255, 0.6),
+        0 0 20px rgba(0, 0, 255, 0.4);
+    text-align: center;
+    padding-top: 70px;
+    line-height: 2;
+}
+.box_1_1 {
+    margin-left:40%;
+    text-align: left;
+    line-height: 2;
+}
+@media screen and (max-width: 800px) {
+    .box_1 > h3 {
+        font-size: 90%;
+    }
+    .box_1 > .box_1_1 > h3 {
+        font-size: 90%;
+    }
+}
+
+.box_2 {
+    grid-area: box_2;
+    background-color: black;
+    box-shadow: 
+        0 0 5px rgba(0, 0, 0, 0.8),
+        0 0 10px rgba(0, 0, 0, 0.6),
+        0 0 20px rgba(0, 0, 0, 0.4);
+    text-align: center;
+    padding: 15px;
+}
+.box_2 > h1 {
+    color: white;
+    font-size: 2em;
+}
+
+.box_3 {
+    grid-area: box_3;
+    box-shadow: 
+        0 0 5px rgba(128, 128, 128, 0.8),
+        0 0 10px rgba(128, 128, 128, 0.6),
+        0 0 15px rgba(128, 128, 128, 0.4);
+    line-height: 1.5;
+}
+.box_3 > .box_3_1 {
+    margin-left: 10%;
+    margin-right: 5%;
+    line-height: 1.5;
+}
+.box_3 > .box_3_1 > .box_3_centre_interet {
+    margin-left: 10%;
+    margin-right: 5%;
+    line-height: 50%;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
