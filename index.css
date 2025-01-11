@@ -220,7 +220,7 @@ main {
     margin-bottom: 20px;
     display: grid; 
     grid-template-columns: 1fr 2fr; 
-    grid-template-rows: auto auto auto; 
+    grid-template-rows: auto auto auto;
     gap: 15px 15px; 
     grid-template-areas: 
         "box_1 box_2"
@@ -277,6 +277,7 @@ main {
     line-height: 1.5;
 }
 .box_3 > .box_3_1 {
+    margin-top: 10px;
     margin-left: 10%;
     margin-right: 5%;
     line-height: 1.5;
@@ -289,3 +290,24 @@ main {
     margin-bottom: 15px;
 }
 
+@media screen and (max-width: 650px) {
+    .cadre_cv {
+        grid-template-areas: 
+            "box_2 box_2"
+            "box_1 box_1"
+            "box_3 box_3";
+    }
+    .box_3 {
+        font-size: 0.8em;
+    }
+    .box_1 {
+        text-align: left;
+        padding-top: 30px;
+    }
+    .box_1_1 {
+        margin-left: 15%;
+    }
+    .box_1 > h3 {
+        margin-left: 5%;
+    }
+}
