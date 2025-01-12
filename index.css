@@ -311,3 +311,50 @@ main {
         margin-left: 5%;
     }
 }
+
+/* carte pour les réseaux */
+
+article {
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 500px;
+    width: 50%;
+    background-color: rgba(208, 208, 208, 0.9);
+    border-radius: 15px;
+    box-shadow: 7px 7px 20px rgba(0, 0, 0, 0.5);
+    margin-top: 60px;
+    margin-left: 30%;
+    margin-bottom: 30px;
+    padding-left: 30px;
+    padding-top: 50px;
+}
+
+.text_card {
+    display: none;
+}
+
+.front {
+    width: 100%;
+}
+
+.card:hover .text_card {
+    display: block;
+    color: white;
+}
+
+.card:hover .front {
+    display: none;
+}
+
+.card:hover {
+    background-image: url(img\ pour\ site\ portfolio.png);
+    background-size: cover;
+    z-index: -1;
+}
+
+.card:hover:not(.text_card) {
+    filter: blur(5px);
+}
