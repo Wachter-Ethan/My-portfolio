@@ -355,6 +355,6 @@ article {
     z-index: -1;
 }
 
-.card:hover:not(.text_card) {
-    filter: blur(5px);
+.card:hover .card:hover:not(.text_card) {
+    filter: blur(10px);
 }
