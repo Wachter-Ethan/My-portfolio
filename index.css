@@ -343,6 +343,7 @@ article {
 .card:hover .text_card {
     display: block;
     color: white;
+    margin-top: 10%;
 }
 
 .card:hover .front {
@@ -374,10 +375,6 @@ article {
     }
 }
 
-
-/* From Uiverse.io by roajuan93 */ 
-
-/* for all social containers*/
 .socialContainer {
     width: 52px;
     height: 52px;
@@ -394,7 +391,7 @@ article {
     width: 19px;
 }
 .largeIcon {
-    width: 27px; /* Ancho específico solo para el icono de TikTok */
+    width: 27px;
 }
 .socialSvg path {
     fill: rgb(255, 255, 255);
@@ -429,4 +426,66 @@ article {
     .mes_reseaux {
         margin-left: 5%;
     }
+}
+
+.item_svg_tiktok {
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.item_svg_tiktok > h2 {
+    margin-left: 20px;
+}
+
+.item_svg_whatsapp {
+    margin-bottom: 30px;
+    margin-left: 10%;
+    display: flex;
+}
+
+.item_svg_whatsapp > h2 {
+    margin-left: 20px;
+}
+
+/* svg youtube */
+.item_svg_youtube {
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.item_svg_youtube > h2 {
+    margin-left: 20px;
+}
+
+.button {
+    cursor: pointer;
+    text-decoration: none;
+    color: #ffff;
+    width: 46px;
+    height: 46px;
+    border-radius: 5px;
+    background-color: #2d2e32;
+    border: 2px solid #2d2e32;
+}
+
+.flex-center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* fin svg youtube */
+
+/* svg github */
+
+.item_svg_github {
+    margin-left: 10%;
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.item_svg_github > h2 {
+    margin-left: 20px;
 }
