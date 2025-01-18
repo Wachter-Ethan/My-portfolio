@@ -230,7 +230,7 @@ main {
 
 .box_1 {
     grid-area: box_1;
-    background-color: blue;
+    background-color: rgb(56, 56, 255);
     box-shadow: 
         0 0 5px rgba(0, 0, 255, 0.8),
         0 0 10px rgba(0, 0, 255, 0.6),
@@ -489,3 +489,55 @@ article {
 .item_svg_github > h2 {
     margin-left: 20px;
 }
+
+/* footer */
+
+.footer {
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    align-items: center;
+}
+
+.footer-content {
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.footer-content .author-name {
+    text-decoration: none;
+    font-weight: bold;
+    color: #298df7; /* Pour une touche de couleur */
+}
+
+@media (max-width: 768px) {
+    .footer-content p {
+        font-size: 16px;
+    }
+}
+
+.hunder_line {
+    height: 1px;
+    border-radius: 5px;
+    box-shadow: 
+        0 0 5px rgba(128, 128, 128, 0.7),
+        0 0 10px rgba(128, 128, 128, 0.5),
+        0 0 15px rgba(128, 128, 128, 0.3);
+    background-color: gray;
+    width: 90%;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    margin-left: 5%;
+}
+

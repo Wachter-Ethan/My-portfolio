@@ -9,3 +9,5 @@ function btn_CV() {
         document.getElementsByClassName("btn_CV")[0].innerHTML = "Cliquez ici pour voire mon CV.";
     }
 }
+
+// footer
