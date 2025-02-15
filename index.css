@@ -485,6 +485,9 @@ article {
     display: flex;
     margin-bottom: 30px;
 }
+.flex-center {
+    cursor: default;
+}
 
 .item_svg_github > h2 {
     margin-left: 20px;
@@ -541,3 +544,10 @@ article {
     margin-left: 5%;
 }
 
+.txt_temporaire {
+    display: none;
+}
+.card:hover .txt_temporaire {
+    display: block;
+    color: white;
+}
