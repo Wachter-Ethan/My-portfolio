@@ -1,3 +1,15 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+}
+* {
+    box-sizing: border-box;
+}
+
+.projet_cine {
+    width: 99%;
+}
+
 .titre_cine {
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 50px;
@@ -15,12 +27,25 @@
     margin-bottom: 50px;
 }
 
+.tableau {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 40px 40px; 
+    grid-template-areas: 
+        "first second";
+    margin-bottom: 100px;
+}
+
 .presentation_projet_cine {
-    margin-left: 10%;
-    margin-right: 50%;
+    grid-area: first;
+    margin-right: 5%;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
     border-radius: 20px;
+    max-width: 100%;
     transition: all 0.6s ease-in-out;
 }
 .presentation_projet_cine:hover {
@@ -29,4 +54,134 @@
         7px 7px 10px rgba(0, 0, 0, 0.6),
         7px 7px 15px rgba(0, 0, 0, 0.4),
         7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+.entre_site_cine {
+    grid-area: second;
+    height: 250px;
+    width: auto;
+    border: 1px solid black;
+    transition: all 0.6s ease-in-out;
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 980px) {
+    .tableau {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "first"
+            "second"; 
+    }
+
+    .composition_site_cine {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .categorie_projet_cine {
+        width: 90%;
+        height: 250px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.composition_site_cine {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.composition_site_cine:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.categorie_projet_cine {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+
+.premier_classement_cine {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.premier_classement_cine:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.premier_classement_projet_cine {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+
+.categorie_site_cine {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.categorie_site_cine:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.categorie_film_projet_cine {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.img_projet_1:hover {
+    border: 10px solid rgba(128, 128, 128, 0.3);
+
 }
