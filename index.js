@@ -25,4 +25,9 @@ function img_projet_1() {
         projet_1.classList.remove("projet_cine_on")
         projet_1.classList.add("projet_cine_off")
     }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
 }
