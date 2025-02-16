@@ -143,6 +143,7 @@ header {
 .img_projets img:hover {
     flex-grow: 0.5;
     transform: scale(1.1);
+    cursor: pointer;
 }
 
 /* partie CV */
