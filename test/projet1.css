@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.projet_cine {
+.projet_cine_on {
     width: 99%;
 }
 
@@ -183,5 +183,4 @@ body {
 
 .img_projet_1:hover {
     border: 10px solid rgba(128, 128, 128, 0.3);
-
 }
