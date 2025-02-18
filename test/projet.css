@@ -1,7 +1,201 @@
-body {
-    overflow-x: hidden;
-    margin: 0;
+.projet_pyxel_off {
+    display: none;
 }
-* {
+.projet_pyxel_on {
+    width: 99%;
+}
+
+.titre_pyxel {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    box-shadow: 
+        5px 5px 5px rgba(0, 0, 0, 0.9),
+        5px 5Px 10px rgba(0, 0, 0, 0.7),
+        5px 5px 15px rgba(0, 0, 0, 0.5),
+        5px 5px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.tableau_2_2 {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 0.4fr 1fr; 
+    gap: 10px 15px; 
+    grid-template-areas: 
+        "first first first"
+        "second third fourth"; 
+    margin-bottom: 100px;
+}
+
+.presentation_projet_pyxel {
+    grid-area: first;
+    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    transition: all 0.6s ease-in-out;
+}
+.presentation_projet_pyxel:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.projet_pyxel_scolaire {
+    grid-area: second;
+    height: 250px;
+    width: auto;
+    border: 1px solid black;
+    transition: all 0.6s ease-in-out;
+    border-radius: 20px;
+}
+
+.tableau_2_1 {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 40px 40px; 
+    grid-template-areas: 
+        "first second";
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 980px) {
+    .tableau_2_1 {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "first"
+            "second";
+    }
+
+    .tableau_2_2 {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr 1fr 1fr; 
+        gap: 10px 10px;
+        margin-bottom: 50px;
+        grid-template-areas: 
+            "first"
+            "second"
+            "third"
+            "fourth"; 
+    }
+    .presentation_projet_pyxel {
+        width: 90%;
+    }
+    .projet_pyxel_scolaire {
+        width: 90%;
+        height: auto;
+    }
+
+    .explication_projet_pyxel {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+    .conclusion_projet_pyxel {
+        width: 90%;
+        height: 250px;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.explication_projet_pyxel {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
     box-sizing: border-box;
+}
+
+.explication_projet_pyxel:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.projet_pyxel_scolaire2 {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+.projet_pyxel_scolaire3 {
+    grid-area: third;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+.projet_pyxel_scolaire4 {
+    grid-area: fourth;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.tableau_2_3 {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 40px 40px; 
+    grid-template-areas: 
+        "first";
+    margin-bottom: 100px;
+}
+
+.conclusion_projet_pyxel {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.conclusion_projet_pyxel:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.img_projet_2:hover {
+    border: 10px solid rgba(128, 128, 128, 0.3);
 }

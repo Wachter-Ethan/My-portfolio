@@ -31,3 +31,25 @@ function img_projet_1() {
         behavior: "smooth"
     });
 }
+
+function img_projet_2() {
+    let menu = document.getElementById("page_menu");
+    let projet_1 = document.getElementById("projet_pyxel");
+
+    if (menu.classList.contains("page_menu_on")) {
+        menu.classList.remove("page_menu_on");
+        menu.classList.add("page_menu_off");
+        projet_1.classList.remove("projet_pyxel_off")
+        projet_1.classList.add("projet_pyxel_on")
+    } else {
+        menu.classList.remove("page_menu_off");
+        menu.classList.add("page_menu_on");
+        projet_1.classList.remove("projet_pyxel_on")
+        projet_1.classList.add("projet_pyxel_off")
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
