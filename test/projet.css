@@ -1,11 +1,11 @@
-.projet_pyxel_off {
+.projet_flask_off {
     display: none;
 }
-.projet_pyxel_on {
+.projet_flask_on {
     width: 99%;
 }
 
-.titre_pyxel {
+.titre_flask {
     background-color: rgba(0, 0, 0, 0.4);
     margin-top: 50px;
     margin-left: 30%;
@@ -22,21 +22,20 @@
     margin-bottom: 50px;
 }
 
-.tableau_2_2 {
+.tableau_3_1 {
     margin-left: 60px;
     margin-right: 50px;
     display: grid; 
-    grid-template-columns: 1fr 1fr 1fr; 
-    grid-template-rows: 0.4fr 1fr; 
-    gap: 10px 15px; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 40px 40px; 
     grid-template-areas: 
-        "first first first"
-        "second third fourth"; 
+        "case";
     margin-bottom: 100px;
 }
 
-.presentation_projet_pyxel {
-    grid-area: first;
+.presentation_projet_flask {
+    grid-area: case;
     margin-right: 5%;
     background-color: rgba(0, 0, 0, 0.2);
     padding: 20px;
@@ -44,7 +43,7 @@
     max-width: 100%;
     transition: all 0.6s ease-in-out;
 }
-.presentation_projet_pyxel:hover {
+.presentation_projet_flask:hover {
     box-shadow: 
         7px 7px 5px rgba(0, 0, 0, 0.8),
         7px 7px 10px rgba(0, 0, 0, 0.6),
@@ -52,16 +51,7 @@
         7px 7px 20px rgba(0, 0, 0, 0.4);
 }
 
-.projet_pyxel_scolaire {
-    grid-area: second;
-    height: 250px;
-    width: auto;
-    border: 1px solid black;
-    transition: all 0.6s ease-in-out;
-    border-radius: 20px;
-}
-
-.tableau_2_1 {
+.tableau {
     margin-left: 60px;
     margin-right: 50px;
     display: grid; 
@@ -74,7 +64,7 @@
 }
 
 @media screen and (max-width: 980px) {
-    .tableau_2_1 {
+    .tableau_3_1 {
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -82,39 +72,30 @@
             "second";
     }
 
-    .tableau_2_2 {
-        grid-template-columns: 1fr; 
-        grid-template-rows: 1fr 1fr 1fr 1fr; 
+    .tableau {
+        grid-template-columns: 1fr 1fr; 
+        grid-template-rows: 1fr; 
         gap: 10px 10px;
         margin-bottom: 50px;
         grid-template-areas: 
-            "first"
-            "second"
-            "third"
-            "fourth"; 
+            "first second"; 
     }
-    .presentation_projet_pyxel {
+    .presentation_projet_flask {
         width: 90%;
     }
-    .projet_pyxel_scolaire {
+    .explication_code_py_projet_flask {
         width: 90%;
         height: auto;
     }
 
-    .explication_projet_pyxel {
+    .explication_site_projet_flask {
         width: 90%;
-        margin-left: 5%;
-        margin-right: 5%;
-    }
-    .conclusion_projet_pyxel {
-        width: 90%;
-        height: 250px;
         margin-left: 5%;
         margin-right: 5%;
     }
 }
 
-.explication_projet_pyxel {
+.explication_code_py_projet_flask {
     grid-area: first;
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -126,7 +107,7 @@
     box-sizing: border-box;
 }
 
-.explication_projet_pyxel:hover {
+.explication_code_py_projet_flask:hover {
     box-shadow: 
         7px 7px 5px rgba(0, 0, 0, 0.8),
         7px 7px 10px rgba(0, 0, 0, 0.6),
@@ -134,7 +115,7 @@
         7px 7px 20px rgba(0, 0, 0, 0.4);
 }
 
-.projet_pyxel_scolaire2 {
+.img_python_serveu_local_code {
     grid-area: second;
     height: auto;
     width: 100%;
@@ -144,40 +125,12 @@
     transition: all 0.5s ease-in-out;
     box-sizing: border-box;
 }
-.projet_pyxel_scolaire3 {
-    grid-area: third;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    border: 1px solid black;
-    border-radius: 20px;
-    transition: all 0.5s ease-in-out;
-    box-sizing: border-box;
-}
-.projet_pyxel_scolaire4 {
-    grid-area: fourth;
-    height: auto;
-    width: 100%;
-    max-width: 100%;
-    border: 1px solid black;
-    border-radius: 20px;
-    transition: all 0.5s ease-in-out;
-    box-sizing: border-box;
+
+.img_projet_3:hover {
+    border: 10px solid rgba(128, 128, 128, 0.3);
 }
 
-.tableau_2_3 {
-    margin-left: 60px;
-    margin-right: 50px;
-    display: grid; 
-    grid-template-columns: 1fr; 
-    grid-template-rows: 1fr; 
-    gap: 40px 40px; 
-    grid-template-areas: 
-        "first";
-    margin-bottom: 100px;
-}
-
-.conclusion_projet_pyxel {
+.explication_site_projet_flask {
     grid-area: first;
     margin: 10px;
     background-color: rgba(0, 0, 0, 0.2);
@@ -188,14 +141,20 @@
     max-width: 100%;
     box-sizing: border-box;
 }
-.conclusion_projet_pyxel:hover {
+.explication_site_projet_flask:hover {
     box-shadow: 
         7px 7px 5px rgba(0, 0, 0, 0.8),
         7px 7px 10px rgba(0, 0, 0, 0.6),
         7px 7px 15px rgba(0, 0, 0, 0.4),
         7px 7px 20px rgba(0, 0, 0, 0.4);
 }
-
-.img_projet_2:hover {
-    border: 10px solid rgba(128, 128, 128, 0.3);
+.img_site_serveur_local_qcm {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
 }
