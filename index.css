@@ -1076,7 +1076,7 @@ article {
 }
 
 @media screen and (max-width: 980px) {
-    .tableau_3_1 {
+    .tableau_3 {
         grid-template-columns: 1fr; 
         grid-template-rows: 1fr 1fr;
         grid-template-areas:
@@ -1084,14 +1084,6 @@ article {
             "second";
     }
 
-    .tableau_3 {
-        grid-template-columns: 1fr 1fr; 
-        grid-template-rows: 1fr; 
-        gap: 10px 10px;
-        margin-bottom: 50px;
-        grid-template-areas: 
-            "first second"; 
-    }
     .presentation_projet_flask {
         width: 90%;
     }
@@ -1216,17 +1208,17 @@ article {
     transition: 0.3s;
 }
 
-#label-check:checked + .hamburger-label .line1 {
+#label-check:hover + .hamburger-label .line1 {
     transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
     border-radius: 50px 50px 50px 0;
 }
 
-#label-check:checked + .hamburger-label .line3 {
+#label-check:hover + .hamburger-label .line3 {
     transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
     border-radius: 0 50px 50px 50px;
 }
 
-#label-check:checked + .hamburger-label .line2 {
+#label-check:hover + .hamburger-label .line2 {
     border-top-right-radius: 50px;
     border-bottom-right-radius: 50px;
     width: 45px;
