@@ -23,7 +23,7 @@ header {
     margin-top: 20px;
     border-radius: 80px;
     font-size: 1.5em;
-    animation: infinite 2s changement_color;
+    animation: infinite 6s changement_color;
 }
 
 @keyframes changement_color {
@@ -75,7 +75,7 @@ header {
 }
 
 .photo_container {
-    margin-left: 10px;
+    margin-left: 15px;
     margin-top: 5px;
     margin-right: 15px;
     height: 200px;
@@ -112,6 +112,7 @@ header {
         margin-bottom: 20px;
         height: 100px;
         width: 100px;
+        margin-left: 20px;
     }
     .part_presentation{
         padding-left: 2%;
