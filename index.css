@@ -1228,21 +1228,4 @@ article {
     margin: 36px 0 0 0;
     transition: 0.3s;
 }
-
-#label-check:hover + .hamburger-label .line1 {
-    transform: rotate(35deg) scaleX(.55) translate(39px, -4.5px);
-    border-radius: 50px 50px 50px 0;
-}
-
-#label-check:hover + .hamburger-label .line3 {
-    transform: rotate(-35deg) scaleX(.55) translate(39px, 4.5px);
-    border-radius: 0 50px 50px 50px;
-}
-
-#label-check:hover + .hamburger-label .line2 {
-    border-top-right-radius: 50px;
-    border-bottom-right-radius: 50px;
-    width: 45px;
-}
-
 /* fin button menu */
