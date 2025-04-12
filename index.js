@@ -76,6 +76,28 @@ function img_projet_3() {
     });
 }
 
+function img_projet_4() {
+    let menu = document.getElementById("page_menu");
+    let projet_3 = document.getElementById("projet_jeu_snake");
+
+    if (menu.classList.contains("page_menu_on")) {
+        menu.classList.remove("page_menu_on");
+        menu.classList.add("page_menu_off");
+        projet_3.classList.remove("projet_jeu_snake_off");
+        projet_3.classList.add("projet_jeu_snake_on");
+    } else {
+        menu.classList.remove("page_menu_off");
+        menu.classList.add("page_menu_on");
+        projet_3.classList.remove("projet_jeu_snake_on");
+        projet_3.classList.add("projet_jeu_snake_off");
+    }
+
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
 function retour_menu() {
     let menu = document.getElementById("page_menu");
     let projet_3 = document.getElementById("projet_flask");

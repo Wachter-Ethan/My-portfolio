@@ -1229,3 +1229,178 @@ article {
     transition: 0.3s;
 }
 /* fin button menu */
+
+
+.projet_jeu_snake_off {
+    display: none;
+}
+.projet_jeu_snake_on {
+    width: 99%;
+}
+
+.titre_jeu_snake {
+    background-color: rgba(0, 0, 0, 0.4);
+    margin-top: 50px;
+    margin-left: 30%;
+    margin-right: 30%;
+    text-align: center;
+    padding-top: 3px;
+    padding-bottom: 3px;
+    border-radius: 30px;
+    box-shadow: 
+        5px 5px 5px rgba(0, 0, 0, 0.9),
+        5px 5Px 10px rgba(0, 0, 0, 0.7),
+        5px 5px 15px rgba(0, 0, 0, 0.5),
+        5px 5px 20px rgba(0, 0, 0, 0.3);
+    margin-bottom: 50px;
+}
+
+.tableau_4_1 {
+    margin-left: 50px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 0 0; 
+    grid-template-areas: 
+        "case";
+    margin-bottom: 100px;
+}
+
+.presentation_projet_snake {
+    grid-area: case;
+    margin-right: 5%;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    max-width: 100%;
+    transition: all 0.6s ease-in-out;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    margin-right: 10%;
+}
+.presentation_projet_snake:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tableau_4 {
+    margin-left: 60px;
+    margin-right: 50px;
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr; 
+    gap: 40px 40px; 
+    grid-template-areas: 
+        "first second";
+    margin-bottom: 100px;
+}
+
+@media screen and (max-width: 980px) {
+    .tableau_4 {
+        grid-template-columns: 1fr; 
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas:
+            "first"
+            "second";
+    }
+
+    .presentation_projet_snake {
+        width: 90%;
+    }
+    .explication_code_projet_jeu_snake {
+        width: 90%;
+        height: auto;
+    }
+
+    .explication_projet_snake {
+        width: 90%;
+        margin-left: 5%;
+        margin-right: 5%;
+    }
+}
+
+.explication_code_projet_jeu_snake {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.explication_code_projet_jeu_snake:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+
+.tableau_4_2 {
+    display: grid; 
+    grid-template-columns: 1fr 1fr; 
+    grid-template-rows: 1fr 1fr; 
+    gap: 10px 10px; 
+    grid-template-areas: 
+        "explication_code_projet_jeu_snake code_1_snake"
+        "explication_code_projet_jeu_snake code_2_snake"; 
+}
+.explication_code_projet_jeu_snake { 
+    grid-area: explication_code_projet_jeu_snake; 
+}
+.code_1_snake { 
+    grid-area: code_1_snake; 
+}
+.code_2_snake { 
+    grid-area: code_2_snake; 
+}
+
+.img_projet_4{
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
+
+.img_projet_4:hover {
+    border: 10px solid rgba(128, 128, 128, 0.3);
+}
+
+.explication_projet_snake {
+    grid-area: first;
+    margin: 10px;
+    background-color: rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    border-radius: 20px;
+    transition: all 0.6s ease-in-out;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+.explication_projet_snake:hover {
+    box-shadow: 
+        7px 7px 5px rgba(0, 0, 0, 0.8),
+        7px 7px 10px rgba(0, 0, 0, 0.6),
+        7px 7px 15px rgba(0, 0, 0, 0.4),
+        7px 7px 20px rgba(0, 0, 0, 0.4);
+}
+.jeu_snake_game {
+    grid-area: second;
+    height: auto;
+    width: 100%;
+    max-width: 100%;
+    border: 1px solid black;
+    border-radius: 20px;
+    transition: all 0.5s ease-in-out;
+    box-sizing: border-box;
+}
