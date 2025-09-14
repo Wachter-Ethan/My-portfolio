@@ -1405,6 +1405,6 @@ article {
     box-sizing: border-box;
 }
 
-.citation > p{
-    color: rgba(150, 150, 150, 0.5);
+.citation > p {
+    color: rgba(150, 150, 150, 0.4);
 }
