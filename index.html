@@ -48,7 +48,7 @@
                 <FONT face="Monospace"><h1>Mes projets</h1></FONT>
             </div>
             <div class="tous_projets" id="tous_projets">
-                <button class="btn_tous_projets" id="btn_tous_projets"> Projets </button>
+                <button onclick="btn_tous_les_projets()" class="btn_tous_projets" id="btn_tous_projets"> Projets </button>
             </div>
             <article class="img_projets">
                 <img onclick="img_projet_1()" src="projet_cinema.png" alt="">
@@ -249,6 +249,28 @@
         </article>
     </section>
 
+    <section class="tous_les_projets_off" id="tous_les_projets">
+        <div class="container">  
+            <input class="label-check" id="label-check" type="checkbox" onclick="retour_menu()">
+            <label for="label-check" class="hamburger-label">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            <label>
+        </div>
+        <section class="projects">
+            <h2>Mes projets</h2>
+            <ul class="project-list">
+                <li><a href="#" onclick="img_projet_1()" >Projet site cinéma</a></li>
+                <li><a href="#" onclick="img_projet_2()" >Projet jeu vaisseau pyxel</a></li>
+                <li><a href="#" onclick="img_projet_3()" >Projet serveur flask local</a></li>
+                <li><a href="#" onclick="img_projet_4()" >Projet jeu snake HTML, CSS, JavaScript</a></li>
+                <li><a href="#" onclick="" >Projet jeu plante fighter pyxel</a></li>
+                <li><a href="#" onclick="" >Projet transfert fichier texte vers bin : C</a></li>
+            </ul>
+        </section>
+    </section>
+
     <section class="projet_cine_off" id="projet_cine">
         <div class="container">  
             <input class="label-check" id="label-check" type="checkbox" onclick="retour_menu()">
@@ -418,7 +440,14 @@
             </div>
             <img class="jeu_snake_game img_projet_4" src="jeu_snake_game.png" alt="">
         </main>
+    </section>
 
+    <section class="projet_plante_fighter_off" id="projet_plante_fighter">
+        <h1>Plante Fighter</h1>
+    </section>
+
+    <section class="projet_transfert_txt_bin_off" id="projet_transfert_txt_bin">
+        <h1>Fichier txt vers bin</h1>
     </section>
 
     <footer class="footer">
