@@ -112,6 +112,9 @@ function retour_menu() {
     let projet_2 = document.getElementById("projet_pyxel");
     let projet_4 = document.getElementById("projet_jeu_snake");
     let projet_1 = document.getElementById("projet_cine");
+    let tous_les_projets = document.getElementById("tous_les_projets");
+    let page_plante_fighter = document.getElementById("projet_plante_fighter");
+    let page_fichier_txt_bin = document.getElementById("projet_fichier_txt_bin");
 
     if (menu.classList.contains("page_menu_off")) {
         menu.classList.remove("page_menu_off");
@@ -124,6 +127,12 @@ function retour_menu() {
         projet_1.classList.add("projet_cine_off");
         projet_4.classList.remove("projet_jeu_snake_on");
         projet_4.classList.add("projet_jeu_snake_off");
+        tous_les_projets.classList.remove("tous_les_projets_on");
+        tous_les_projets.classList.add("tous_les_projets_off");
+        page_plante_fighter.classList.remove("projet_plante_fighter_on");
+        page_plante_fighter.classList.add("projet_plante_fighter_off");
+        page_fichier_txt_bin.classList.remove("projet_transfert_txt_bin_on");
+        page_fichier_txt_bin.classList.add("projet_transfert_txt_bin_off");
 
     } else {
         menu.classList.remove("page_menu_on");
@@ -136,6 +145,12 @@ function retour_menu() {
         projet_1.classList.add("projet_cine_on");
         projet_4.classList.remove("projet_jeu_snake_off");
         projet_4.classList.add("projet_jeu_snake_on");
+        tous_les_projets.classList.remove("tous_les_projets_off");
+        tous_les_projets.classList.add("tous_les_projets_on");
+        page_plante_fighter.classList.remove("projet_plante_fighter_off");
+        page_plante_fighter.classList.add("projet_plante_fighter_on");
+        page_fichier_txt_bin.classList.remove("projet_transfert_txt_bin_off");
+        page_fichier_txt_bin.classList.add("projet_transfert_txt_bin_on");
     }
 
     window.scrollTo({
@@ -184,3 +199,51 @@ links.forEach(link => {
     link.style.transition = "all 0.5s ease";
     observer.observe(link);
 });
+
+function page_plante_fighter() {
+    let menu = document.getElementById("page_menu");
+    let page_plante_fighter = document.getElementById("projet_plante_fighter");
+    let tous_les_projets = document.getElementById("tous_les_projets");
+
+    // 🔴 cacher la liste des projets
+    tous_les_projets.classList.remove("tous_les_projets_on");
+    tous_les_projets.classList.add("tous_les_projets_off");
+
+    // 🔵 cacher le menu
+    menu.classList.remove("page_menu_on");
+    menu.classList.add("page_menu_off");
+
+    // 🟢 afficher projet cinéma
+    page_plante_fighter.classList.remove("projet_plante_fighter_off");
+    page_plante_fighter.classList.add("projet_plante_fighter_on");
+
+    // scroll en haut
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
+
+function page_fichier_txt_bin() {
+    let menu = document.getElementById("page_menu");
+    let page_fichier_txt_bin = document.getElementById("projet_fichier_txt_bin");
+    let tous_les_projets = document.getElementById("tous_les_projets");
+
+    // 🔴 cacher la liste des projets
+    tous_les_projets.classList.remove("tous_les_projets_on");
+    tous_les_projets.classList.add("tous_les_projets_off");
+
+    // 🔵 cacher le menu
+    menu.classList.remove("page_menu_on");
+    menu.classList.add("page_menu_off");
+
+    // 🟢 afficher projet cinéma
+    page_fichier_txt_bin.classList.remove("projet_transfert_txt_bin_off");
+    page_fichier_txt_bin.classList.add("projet_transfert_txt_bin_on");
+
+    // scroll en haut
+    window.scrollTo({
+        top: 0,
+        behavior: "smooth"
+    });
+}
